@@ -1,0 +1,103 @@
+.header__box{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 1rem;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 .3rem;
+    justify-content: space-between;
+    box-shadow: 0px 1px .2rem 0px #dedede;
+    position: relative;
+    z-index: 999;
+}
+.logo{
+    font-size: .4rem
+}
+.menu{
+    width: .6rem;
+    height: .6rem;
+    background: url('../../assets/menu.svg') no-repeat center;
+    background-size: cover;
+}
+.header__box.cur .menu{
+    background: url('../../assets/cancel.svg') no-repeat center;
+    background-size: cover;
+}
+.header__box.cur .menu__box{
+    transform: translateY(0);
+}
+.header__box.cur:before{
+    content: '';
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+}
+.menu__box{
+    transform: translateY(-50vh);
+    max-height: 50vh;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color:#fff;
+    padding: .3rem .1rem;
+    transition: .3s all;
+    position: relative;
+    z-index: 20;
+}
+.menu__title{
+    text-align: center;
+    font-size: .32rem;
+    position: relative;
+    color: #333;
+    margin-bottom: .3rem;
+}
+.menu__title:before{
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: 1px;
+    top: 50%;
+    background-color: #999;
+    left: 10%;
+}
+.menu__title:after{
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: 1px;
+    top: 50%;
+    background-color: #999;
+    right: 10%;
+}
+.menu__list{
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+}
+.menu__item{
+    font-size: .32rem;
+    color: #999;
+    height: .8rem;
+    line-height: .8rem;
+    padding: 0 .2rem;
+    margin: 0 .2rem .2rem;
+    transition: .3s all;
+}
+.menu__item.cur{
+    color: #666;
+    border-bottom: 2px solid red
+}

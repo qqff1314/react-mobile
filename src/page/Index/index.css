@@ -1,0 +1,80 @@
+.main{
+    transition: .3s all;
+    height: 100vh;
+    position: relative;
+}
+.list{
+    position: absolute;
+    bottom: 0;
+    top: 1rem;
+    width: 100%;
+    overflow-y: auto;
+    padding: .3rem;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+.list__item{
+    width: 100%;
+    height: 3rem;
+    border-radius: .1rem;
+    box-shadow: 0 0 .3rem 2px #dedede;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: .3rem;
+}
+.list__item:last-child{
+    margin-bottom: 0;
+}
+.list__img{
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.list__info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    padding: .3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background: hska(0,0%,100%,.3);
+    overflow: hidden;
+    position: relative;
+}
+.list__info:before{
+    content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:-30px;
+	z-index:-1;
+	-webkit-filter:blur(20px);
+	filter:blur(20px);
+}
+.list__info time{
+    font-size: .2rem;
+    line-height: .22rem;
+    color: #7e7e7e;
+}
+.list__info h2{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-size: .3rem;
+    line-height: .4rem;
+    height: 1.2rem;
+    overflow: hidden;
+    word-break: break-all;
+    font-weight: 400;
+}
+.loader{
+    width: 100%;
+    height: 1rem;
+    background: url('../../assets/load.svg') no-repeat center;
+    background-size: 1rem  1rem;
+}

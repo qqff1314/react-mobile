@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-repeat: no-repeat;
+  font-family: "微软雅黑";
+}
+
+*:focus {
+  outline: none;
+}
+
+*, *:before, *:after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ol, ul, li {
+
+  padding: 0;
+  margin: 0;
+  display: block;
+
+}
+
+u, i {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+
+}
+
+fieldset, img {
+  border: 0;
+
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+body,html{
+  min-height:100vh;
+  background-color: #fff;
+}
+input, select, textarea {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+}
+
+a {
+  color:#000;
+  text-decoration: none;
+}
+
+a:link {
+
+  text-decoration: none;
+}
+
+a:visited {
+
+  text-decoration: none;
+}
+
+#root{
+  height: 100vh;
+}
+.animated-router-container{
+  height: 100%;
+}
